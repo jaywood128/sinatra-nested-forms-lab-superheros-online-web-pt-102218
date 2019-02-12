@@ -14,6 +14,7 @@ class App < Sinatra::Base
      @team = Team.new(name: params["team"]["name"], motto: params["team"]["motto"])
      @amanda = params["team"]["heros"][0]
      @arel = params["team"]["heros"][1]
+     @katie = params["team"]["heros"][2]
 
     erb :team
   end
