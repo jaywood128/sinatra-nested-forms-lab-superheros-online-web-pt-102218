@@ -1,8 +1,8 @@
 class Team
 
-attr_accessor :team, :motto
-@all = []
-  def initialize(name, motto)
+attr_accessor :name, :motto
+@@all = []
+  def initialize(name:, motto:)
     @name = name
     @motto = motto
     @@all << self
